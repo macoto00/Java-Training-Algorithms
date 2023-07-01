@@ -9,7 +9,7 @@ If there is no common prefix, return an empty string "".
  */
 public class LongestCommonPrefix {
     public static void main(String[] args) {
-        String[] strs = {"flower","flow","flight", "eflight", "aflant"};
+        String[] strs = {"flower","flow","flight", "eflight", "alafl"};
         String[] strs2 = {"dog","racecar","car"};
         System.out.println(longestCommonPrefix(strs));
         System.out.println(longestCommonPrefix(strs2));
