@@ -15,40 +15,14 @@
 
 function shiftedDiff(first, second) {
 
-    const firstSplitted = first.split("");
-    const secondSplitted = second.split("");
-    let rotated = 0;
-
-    firstSorted = firstSplitted.sort();
-    secondSorted = secondSplitted.sort();
-
-    if (firstSorted.length !== secondSorted.length || !hasSameChars(firstSorted, secondSorted)) {
-        rotated = -1;
-        return rotated;
-    }
-
-    for (let i = 0; i < firstSplitted.length; i++) {
-        if (firstSplitted[i] == secondSplitted[i]) {
-            return rotated;
-        } else {
-            let temp = secondSplitted[i];
-            secondSplitted[i].shift;
-            secondSplitted.pop(temp);
-            rotated++;
-        }
-    }
-
-    return rotated;
-
-}
-
-function hasSameChars(first, second) {
-
     for (let i = 0; i < first.length; i++) {
-        if (!first[i] === second[i]) {
-            return false;
+        if (first === second) {
+            return i;
+        } else {
+            first = first.slice(-1) + first.slice(0, -1);
         }
     }
 
-    return true;
+    return -1;
+
 }
