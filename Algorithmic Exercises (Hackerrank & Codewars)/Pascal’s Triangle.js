@@ -16,10 +16,25 @@
 // n = 2: [1,  1, 1]
 // n = 4: [1,  1, 1,  1, 2, 1,  1, 3, 3, 1]
 // Note
-// Beware of overflow. Requested terms of a triangle are guaranteed to fit into the returned type, but depending on seleced method of calculations, intermediate values can be larger.
+// Beware of overflow. Requested terms of a triangle are guaranteed to fit into the returned type, but depending on selected method of calculations, intermediate values can be larger.
 
 function pascalsTriangle(n) {
 
+    if (n <= 0) {
+        return [];
+    }
 
+    const triangle = [[1]];
+    for (let i = 1; i < n; i++) {
+        const row = [1];
+        for (let j = 1; j <= i; j++) {
+            const prevRow = triangle[i - 1];
+            const value = (prevRow[j - 1] || 0) + (prevRow[j] || 0);
+            row.push(value);
+        }
+        triangle.push(row);
+    }
+
+    return triangle.flat();
 
 }
