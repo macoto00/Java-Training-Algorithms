@@ -18,6 +18,14 @@
 
 function getMostProfitFromStockQuotes(quotes) {
 
+    let maxProfit = 0;
+    let currentProfit = 0;
 
+    for (let i = quotes.length - 1; i >= 0; i--) {
+        currentProfit = Math.max(currentProfit, quotes[i]);
+        maxProfit += currentProfit - quotes[i];
+    }
+
+    return maxProfit;
 
 }
