@@ -7,3 +7,4 @@ unfinished:
 Duplicates
 Pile of towels
 Bishop Movement checker
+Sudoku board validator
