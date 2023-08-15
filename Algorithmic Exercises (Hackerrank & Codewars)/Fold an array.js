@@ -30,21 +30,18 @@
 
 // I have created other katas. Have a look if you like coding and challenges.
 
-function foldArray(array, runs) {
+var uniqueInOrder = function (iterable) {
+    let result = [];
 
-    let foldedArray = array.slice();
-
-    for (let i = 0; i < runs; i++) {
-        const length = foldedArray.length;
-        const halfLength = Math.floor(length / 2);
-
-        for (let j = 0; j < halfLength; j++) {
-            foldedArray[j] += foldedArray[length - 1 - j];
+    for (let i = 0; i < iterable.length; i++) {
+        if (i === 0 || iterable[i] !== iterable[i - 1]) {
+            result.push(iterable[i]);
         }
-
-        foldedArray = foldedArray.slice(0, halfLength + (length % 2));
     }
 
-    return foldedArray;
+    return result;
 
+    // this one is hot!!!
+
+    // return [...iterable].filter((a, i) => a !== iterable[i-1])
 }
