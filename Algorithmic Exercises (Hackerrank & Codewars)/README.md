@@ -4,5 +4,6 @@ https://hackmd.io/@rdg5/B1l9m4OO2
 
 unfinished: 
 
-duplicates
-pile of towels
+Duplicates
+Pile of towels
+Bishop Movement checker
