@@ -24,3 +24,6 @@
 // Notes
 // It is ensured that 0 <= t <= n
 
+function sortThePile(pileOfTowels, weeklyUsedTowels) {
+
+}
