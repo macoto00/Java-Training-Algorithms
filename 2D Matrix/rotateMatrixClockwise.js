@@ -1,5 +1,17 @@
+
 function rotateMatrixClockwise(matrix) {
-    // Your code here
+    let length = matrix.length;
+    let result = [];
+
+    for (let i = 0; i < length; i++) {
+        result[i] = [];
+
+        for (let j = length - 1; j >= 0; j--) {
+            result[i].push(matrix[j][i]);
+        }
+    }
+
+    return result;
 }
 
 const matrix = [
@@ -8,13 +20,12 @@ const matrix = [
     [7, 8, 9]
 ];
 
-rotateMatrixClockwise(matrix);
-
-console.log(matrix);
-
-// Output:
-// [
-//    [7, 4, 1],
-//    [8, 5, 2],
-//    [9, 6, 3]
-// ]
+const rotatedMatrix = rotateMatrixClockwise(matrix);
+console.log(rotatedMatrix);
+  /* Output:
+[
+   [7, 4, 1],
+   [8, 5, 2],
+   [9, 6, 3]
+]
+*/
