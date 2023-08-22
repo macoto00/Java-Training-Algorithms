@@ -8,10 +8,10 @@ const inputMatrix = [
 function transposeMatrix(matrix) {
     
     let length = matrix.length;
-    let result = new Array(length);
+    let result = [];
 
     for (let i = 0; i < length; i++) {
-        result[i] = new Array(length);
+        result[i] = [];
     }
 
     for (let i = 0; i < length; i++) {
