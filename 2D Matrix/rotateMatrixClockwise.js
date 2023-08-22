@@ -22,6 +22,7 @@ const matrix = [
 
 const rotatedMatrix = rotateMatrixClockwise(matrix);
 console.log(rotatedMatrix);
+
   /* Output:
 [
    [7, 4, 1],
