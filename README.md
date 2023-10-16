@@ -2,7 +2,7 @@
 
 Training Algorithms via LeetCode, HackerRank, CodeWars, Coderbyte
 
-In Java & JavaScript
+With Java & JavaScript
 
 # See more at links
 
