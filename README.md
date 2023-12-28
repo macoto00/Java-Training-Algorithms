@@ -4,7 +4,7 @@ Training Algorithms via LeetCode, HackerRank, CodeWars, Coderbyte
 
 With Java & JavaScript
 
-# See more at links
+# See more of my work at links
 
 - CodeWars: https://www.codewars.com/users/macoto00
 - HackerRank: https://www.hackerrank.com/macountomas
